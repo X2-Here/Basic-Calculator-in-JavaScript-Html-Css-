@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+#in1{
+    color: wheat;
+}
+.main {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 320px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+input[type="text"] {
+    grid-column: span 4;
+    height: 60px;
+    text-align: right;
+    font-size: 2em;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: white;
+}
+
+button {
+    width: 100%;
+    height: 70px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 50%;
+    background-color: #505050;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #787878;
+}
+
+button:active {
+    background-color: #a0a0a0;
+}
+
+button#plus, button#equals {
+    background-color: #ff9500;
+}
+
+button#plus:hover, button#equals:hover {
+    background-color: #ffa733;
+}
+
+button#plus:active, button#equals:active {
+    background-color: #cc7a00;
+}
+
+button#clear {
+    background-color: #d4d4d2;
+    color: black;
+}
+
+button#clear:hover {
+    background-color: #e5e5e2;
+}
+
+button#clear:active {
+    background-color: #b4b4b2;
+}
